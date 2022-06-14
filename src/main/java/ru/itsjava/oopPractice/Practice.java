@@ -2,16 +2,14 @@ package ru.itsjava.oopPractice;
 
 import ru.itsjava.oopPractice.Birds.Crow;
 import ru.itsjava.oopPractice.Transport.Bus;
+import ru.itsjava.oopPractice.Transport.Car;
 
 public class Practice {
     public static void main(String[] args) {
-        Crow crow = new Crow("Voron", true, false, 3);
-        Crow crow2 = new Crow("Voron2", true, false, 3);
-        System.out.println("crow.toString() = " + crow.toString());
-        System.out.println("crow.hashCode() = " + crow.hashCode());
-        System.out.println("crow2.hashCode() = " + crow2.hashCode());
-        System.out.println("crow.equals(crow2) = " + crow.equals(crow2));
-        Bus bus = new Bus("zil 4567", "76r", 349);
-        System.out.println("bus.toString() = " + bus.toString());
+        Car car = new Car("Бентли", "Зеленый");
+        Car car1 = new Car("Жигули", "Баклажан");
+        System.out.println("car.toString() = " + car.toString());
+        System.out.println("car1.toString() = " + car1.toString());
+        System.out.println("car.getPrice() == car1.getPrice() = " + (car.getPrice() == car1.getPrice()));
     }
 }
