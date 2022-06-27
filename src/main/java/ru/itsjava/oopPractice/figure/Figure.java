@@ -5,14 +5,10 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class Figure {
+public abstract class Figure {
     public static final double PI = 3.14;
 
-    public double calculateArea() {
-        return 0.0;
-    }
+    public abstract double calculateArea();
 
-    public double calculatePerimeter() {
-        return 0.0;
-    }
+    public abstract double calculatePerimeter();
 }
